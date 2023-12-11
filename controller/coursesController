@@ -1,0 +1,30 @@
+
+const courses = [
+
+    {name : "java", id:1},
+    {name : "python", id:2},
+    {name : "typescript", id:3},
+    {name : "github", id:4},
+]
+
+const getCourse = (req, res)=>{
+    const course = courses.find(c=> c.id === parseInt(req.params.id))
+    if(!course) res.status(404).send("the course you are looking for dose not exixst")
+    res.send(course)
+}
+
+const showCourses = (req,res)=>{
+    res.send(courses)
+}
+
+const poster = (req,res)=>{
+    res.send(req.body)
+}
+
+module.exports = {
+
+    getCourse,
+    showCourses,
+    poster,
+
+}

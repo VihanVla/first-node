@@ -1,0 +1,11 @@
+const express = require("express");
+const coursesController = require("../controller/coursesController");
+const router = express.Router();
+
+router.get("/" , coursesController.showCourses)
+
+router.get("/:id", coursesController.getCourse);
+
+router.post("/" , coursesController.poster);
+
+module.exports = router;
