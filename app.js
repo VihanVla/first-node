@@ -20,7 +20,7 @@ app.use(morgan("combined"));}
 
 
 app.use("/api/courses" , CoursesRoute);
-app.use("/api", HomeRoutes)
+app.use("/api", HomeRoutes);
 
 const port = process.env.AppPort || 3000
  app.listen(port, ()=>{
