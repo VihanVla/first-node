@@ -3,9 +3,9 @@ function log (req,res,next){
     next();
 }
 
-// function authentication(req,res,next){
-//     console.log("the authentication process is executong")
-//     next();
-// }
+function authentication(req,res,next){
+    console.log("the authentication process is executong")
+    next();
+}
 
-// module.exports = log
+module.exports = log
