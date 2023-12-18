@@ -1,5 +1,8 @@
 const showHome = ((req,res) => {
-    res.send("hello from the backend you bitch")
+    res.send(`hello from the back.. how are you doing
+    
+    
+    we are going to have fun in this node project`)
 })
 
 

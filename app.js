@@ -1,4 +1,4 @@
-const logger = require("./logger");
+const logger = require("./middleware/logger");
 const express = require("express");
 const authentication = require("./authenticator")
 const helmet = require("helmet")
